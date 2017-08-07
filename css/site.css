@@ -7,9 +7,6 @@
 	min-height: 150px;
 }
 
-.background-transparent {
-	background-color: #FFFFFF99;
-}
 .background-cover {
 	background-image: url(../img/Newnotebookandtexturewoodencoverwithpencil.jpg);
 }
@@ -46,6 +43,10 @@
 	float: left;
 }
 
+.float-right {
+	float: right;
+}
+
 /*From https://stackoverflow.com/questions/11552380/how-to-automatically-crop-and-center-an-image*/
 .center-cropped {
   width: 100px;
@@ -66,3 +67,29 @@
   /* modern browsers */
   opacity: 0;
 }
+
+/*From https://css-tricks.com/text-blocks-over-image/ */
+.image-block {
+	position: relative; 
+	width: 100%; /* for IE 6 */
+}
+
+h4 { 
+   position: absolute; 
+   top: 0; 
+   left: 0; 
+   width: 100%; 
+}
+
+h4 span {
+   color: white; 
+   /*font: bold 24px/45px Helvetica, Sans-Serif;*/
+   letter-spacing: -1px;  
+   background: rgba(0, 0, 0, 0.7);
+   padding: 2px; 	
+}
+
+h4 span.spacer {
+	   padding:0 2px;
+}
+
