@@ -93,3 +93,14 @@ h4 span.spacer {
 	   padding:0 2px;
 }
 
+.font-mono {
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.table-fixed-width {
+	table-layout: fixed;
+}
+
+.max-width-300 {
+	max-width: 300px;
+}
