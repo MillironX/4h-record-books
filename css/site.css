@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+
+body {
+	font-size: 14pt;
+}
 .background-grid {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -7,12 +11,22 @@
 	min-height: 150px;
 }
 
+.background-home {
+	background-image: url(../img/woman-keeping-records.jpg);
+}
+.background-eclipse {
+	background-image: url(../img/total-solar-eclipse-scottsbluff-ne.jpg);
+}
+
+.background-bull-calf {
+	background-image: url(../img/number-2-bull-calf.jpg);
+}
 .background-cover {
 	background-image: url(../img/Newnotebookandtexturewoodencoverwithpencil.jpg);
 }
 
 .background-sec-1 {
-	background-image: url(../img/Close-upofaveryniceyoungawardwinnercow.jpg);
+	background-image: url(../img/Close-up-of-a-very-nice-young-award-winner-cow.jpg);
 }
 
 .background-sec-2 {
@@ -55,11 +69,13 @@
 
 /*From https://stackoverflow.com/questions/11552380/how-to-automatically-crop-and-center-an-image*/
 .center-cropped {
-  width: 100px;
-  height: 100px;
   background-position: center center;
   background-repeat: no-repeat;
-  overflow: hidden;
+	background-size: cover;
+	width: 100%;
+	height: 225px;
+	overflow: hidden;
+	display: block;
 }
 
 /* Set the image to fill its parent and make transparent */
@@ -67,11 +83,11 @@
   min-height: 100%;
   min-width: 100%;
   /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";*/
   /* IE 5-7 */
-  filter: alpha(opacity=0);
+  /*filter: alpha(opacity=0);*/
   /* modern browsers */
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 /*From https://css-tricks.com/text-blocks-over-image/ */
@@ -80,14 +96,14 @@
 	width: 100%; /* for IE 6 */
 }
 
-h4 { 
+h6 { 
    position: absolute; 
    top: 0; 
    left: 0; 
    width: 100%; 
 }
 
-h4 span {
+h6 span {
    color: white; 
    /*font: bold 24px/45px Helvetica, Sans-Serif;*/
    letter-spacing: -1px;  
@@ -101,10 +117,12 @@ h4 span.spacer {
 
 .font-mono {
 	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	overflow: hidden
 }
 
 .table-fixed-width {
 	table-layout: fixed;
+	font-size: smaller;
 }
 
 .max-width-300 {
@@ -117,4 +135,51 @@ h4 span.spacer {
 
 .max-height-100 {
 	max-height: 100px;
+}
+
+p {
+	font-size: 14pt;
+}
+
+h1 {
+	font-variant-caps: all-petite-caps;
+}
+
+h1 small {
+	font-variant-caps: normal;
+}
+
+h2 {
+	padding-top: 12pt;
+	font-variant-caps: all-petite-caps;
+}
+
+h3 {
+	font-weight: bolder;
+}
+
+
+
+h4 {
+	text-decoration: underline;
+	font-size: 13pt;
+}
+
+h5 {
+	font-style: italic;
+	font-size: larger;
+	text-decoration: underline;
+}
+
+blockquote {
+	background: linear-gradient(to right,lightgray,#F3F3F3);
+	border-left: 5px solid black ;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+th, td {
+	vertical-align: top;
 }

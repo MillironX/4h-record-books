@@ -11,3 +11,13 @@ $(function() {
 		.before("<span class='spacer'>")
 		.after("<span class='spacer'>");
 });
+
+function visibleLink(linkId) {
+	'use strict';
+	$('.'+linkId).css({'display': 'inline-block'});
+}
+
+function invisibleLink(linkId) {
+	'use strict';
+	$('.'+linkId).css({'display': 'none'});
+}
