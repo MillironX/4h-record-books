@@ -108,10 +108,11 @@ h6 span {
    /*font: bold 24px/45px Helvetica, Sans-Serif;*/
    letter-spacing: -1px;  
    background: rgba(0, 0, 0, 0.7);
-   padding: 2px; 	
+   padding: 2px;
+	font-size: 16pt;
 }
 
-h4 span.spacer {
+h6 span.spacer {
 	   padding:0 2px;
 }
 
@@ -156,13 +157,14 @@ h2 {
 
 h3 {
 	font-weight: bolder;
+		font-size: larger;
 }
 
 
 
 h4 {
 	text-decoration: underline;
-	font-size: 13pt;
+	font-size: larger;
 }
 
 h5 {
