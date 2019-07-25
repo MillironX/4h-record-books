@@ -1,83 +1,63 @@
 @charset "utf-8";
 /* CSS Document */
-
 body {
-	font-size: 14pt;
+  font-size: 14pt;
 }
 .background-grid {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	min-height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 150px;
 }
-
 .background-home {
-	background-image: url(../img/woman-keeping-records.jpg);
-}
-.background-eclipse {
-	background-image: url(../img/total-solar-eclipse-scottsbluff-ne.jpg);
-}
-
-.background-bull-calf {
-	background-image: url(../img/number-2-bull-calf.jpg);
+  background-image: url(../img/woman-keeping-records.jpg);
 }
 .background-cover {
-	background-image: url(../img/Newnotebookandtexturewoodencoverwithpencil.jpg);
+  background-image: url(../img/cover-bg-notebook.jpg);
 }
-
 .background-sec-1 {
-	background-image: url(../img/Close-up-of-a-very-nice-young-award-winner-cow.jpg);
+  background-image: url("../img/sec1-bg-cowshow.jpg");
 }
-
 .background-sec-2 {
-	background-image: url(../img/winner.jpg);
+  background-image: url("../img/sec2-bg-trophy.jpg");
 }
-
 .background-sec-3 {
-	background-image: url(../img/Manmakingspeech.jpg);
+  background-image: url("../img/sec3-bg-gavel.jpg");
 }
-
 .background-sec-4 {
-	background-image: url(../img/Teamofvolunteerspickinguplitterinpark.jpg);
+  background-image: url("../img/sec4-bg-cleanup.jpg");
 }
-
 .background-sec-5 {
-	background-image: url(../img/OldFashionWhiteChurchwithaSteeple.jpg);
+  background-image: url("../img/sec5-bg-church.jpg");
 }
-
 .background-sec-6 {
-	background-image: url(../img/Oldscrollpaperonwoodenbackground.jpg);
+  background-image: url("../img/sec6-bg-books.jpg");
 }
-
 .background-sec-7 {
-	background-image: url(../img/Prettywomanisaproffessionalphotographerwithdslrcamera.jpg);
+  background-image: url("../img/sec7-bg-camera.jpg");
 }
 @media (max-width: 767px) {
-	.center-sm {
-		margin: auto;
-	}
-
+  .center-sm {
+    margin: auto;
+  }
 }
-
 .float-left {
-	float: left;
+  float: left;
 }
-
 .float-right {
-	float: right;
+  float: right;
 }
-
 /*From https://stackoverflow.com/questions/11552380/how-to-automatically-crop-and-center-an-image*/
 .center-cropped {
   background-position: center center;
   background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 225px;
-	overflow: hidden;
-	display: block;
+  background-size: cover;
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+  display: block;
+	margin:auto;
 }
-
 /* Set the image to fill its parent and make transparent */
 .center-cropped img {
   min-height: 100%;
@@ -90,98 +70,82 @@ body {
   /*opacity: 0;*/
 }
 
-/*From https://css-tricks.com/text-blocks-over-image/ */
 .image-block {
-	position: relative; 
-	width: 100%; /* for IE 6 */
+  position: relative;
+  width: 100%; /* for IE 6 */
 }
-
-h6 { 
-   position: absolute; 
-   top: 0; 
-   left: 0; 
-   width: 100%; 
+h6 {
+  color: white;
+  letter-spacing: -1px;
+  font-size: 16pt;
 }
-
-h6 span {
-   color: white; 
-   /*font: bold 24px/45px Helvetica, Sans-Serif;*/
-   letter-spacing: -1px;  
-   background: rgba(0, 0, 0, 0.7);
-   padding: 2px;
-	font-size: 16pt;
+.banner-heading {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2px 10px;
+  position: relative;
+  top: 25px;
+  transition: 0.5s ease;
+  margin: auto;
 }
-
+.banner-heading:hover {}
+.hover-contents:hover div {
+  top: 5px;
+}
+h6 span {}
 h6 span.spacer {
-	   padding:0 2px;
+  padding: 0 2px;
 }
-
 .font-mono {
-	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-	overflow: hidden
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  overflow: hidden
 }
-
 .table-fixed-width {
-	table-layout: fixed;
-	font-size: smaller;
+  table-layout: fixed;
+  font-size: smaller;
 }
-
 .max-width-300 {
-	max-width: 300px;
+  max-width: 300px;
 }
-
 .max-width-100 {
-	max-width: 100px;
+  max-width: 100px;
 }
-
 .max-height-100 {
-	max-height: 100px;
+  max-height: 100px;
 }
-
 p {
-	font-size: 14pt;
+  font-size: 14pt;
 }
-
 h1 {
-	font-variant-caps: all-petite-caps;
+  font-variant-caps: all-petite-caps;
 }
-
 h1 small {
-	font-variant-caps: normal;
+  font-variant-caps: normal;
 }
-
 h2 {
-	padding-top: 12pt;
-	font-variant-caps: all-petite-caps;
+  padding-top: 12pt;
+  font-variant-caps: all-petite-caps;
 }
-
 h3 {
-	font-weight: bolder;
-		font-size: larger;
+  font-weight: bolder;
+  font-size: larger;
 }
-
-
-
 h4 {
-	text-decoration: underline;
-	font-size: larger;
+  text-decoration: underline;
+  font-size: larger;
 }
-
 h5 {
-	font-style: italic;
-	font-size: larger;
-	text-decoration: underline;
+  font-style: italic;
+  font-size: 14pt;
+  text-decoration: underline;
 }
-
 blockquote {
-	background: linear-gradient(to right,lightgray,#F3F3F3);
-	border-left: 5px solid black ;
+  background: linear-gradient(to right, lightgray, #F3F3F3);
+  border-left: 5px solid black;
 }
-
 .underlined {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-
 th, td {
-	vertical-align: top;
+  vertical-align: top;
 }

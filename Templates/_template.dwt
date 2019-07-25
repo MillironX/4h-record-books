@@ -61,6 +61,6 @@
 <!--Bootstrap scripts-->
 <script src="../script/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="../script/bootstrap.min.js" type="text/javascript"></script>
-<script src="../script/site.js" type="text/javascript"></script>
+<script src="../script/parallax.min.js" type="text/javascript"></script>
 </body>
 </html>
